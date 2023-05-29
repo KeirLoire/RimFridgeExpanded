@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimFridge Updated</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName = "RimFridge_SingleRefrigerator"]/building</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_SingleRefrigerator"]</xpath>
+						<value>
+                            <building>
+                                <maxItemsInCell>3</maxItemsInCell>
+                            </building>
+                        </value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_SingleRefrigerator"]/building</xpath>
+						<value>
+                            <maxItemsInCell>3</maxItemsInCell>
+                        </value>
+					</match>
+				</li>
+                <li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName = "RimFridge_Refrigerator"]/building</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_Refrigerator"]</xpath>
+						<value>
+                            <building>
+                                <maxItemsInCell>3</maxItemsInCell>
+                            </building>
+                        </value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_Refrigerator"]/building</xpath>
+						<value>
+                            <maxItemsInCell>3</maxItemsInCell>
+                        </value>
+					</match>
+				</li>
+                <li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName = "RimFridge_QuadRefrigerator"]/building</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_QuadRefrigerator"]</xpath>
+						<value>
+                            <building>
+                                <maxItemsInCell>3</maxItemsInCell>
+                            </building>
+                        </value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_QuadRefrigerator"]/building</xpath>
+						<value>
+                            <maxItemsInCell>3</maxItemsInCell>
+                        </value>
+					</match>
+				</li>
+                <li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName = "RimFridge_SingleWallRefrigerator"]/building</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_SingleWallRefrigerator"]</xpath>
+						<value>
+                            <building>
+                                <maxItemsInCell>3</maxItemsInCell>
+                            </building>
+                        </value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_SingleWallRefrigerator"]/building</xpath>
+						<value>
+                            <maxItemsInCell>3</maxItemsInCell>
+                        </value>
+					</match>
+				</li>
+                <li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName = "RimFridge_WallRefrigerator"]/building</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_WallRefrigerator"]</xpath>
+						<value>
+                            <building>
+                                <maxItemsInCell>3</maxItemsInCell>
+                            </building>
+                        </value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "RimFridge_WallRefrigerator"]/building</xpath>
+						<value>
+                            <maxItemsInCell>3</maxItemsInCell>
+                        </value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
